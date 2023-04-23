@@ -1,0 +1,87 @@
+#tktContainer {
+    max-width: 595px;
+    max-height: 842px;
+
+    .ticketMainContainer {
+        .heading_text {
+            line-height: 0.2;
+
+            h4 {
+                color: #BFBFBF;
+            }
+        }
+
+        .tktHeader {
+            display: flex;
+            align-items: center;
+            font-size: 35px;
+            font-weight: 600;
+            background: #014421;
+            color: whitesmoke;
+
+            .logoImage {
+                img {
+                    width: 120px;
+                }
+            }
+        }
+
+        .location_date_info {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #D3D3D3;
+            border-radius: 5px;
+        }
+
+        .time_status_info {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #D3D3D3;
+            border-radius: 5px;
+        }
+
+        .general_info {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #D3D3D3;
+            border-radius: 5px;
+        }
+
+        .address_info {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #D3D3D3;
+            border-radius: 5px;
+
+            .boarding_point {
+                max-width: 350px;
+
+                h4 {
+                    color: #D3D3D3;
+                }
+            }
+
+            .bus_type {
+                h4 {
+                    color: #D3D3D3;
+                }
+            }
+        }
+
+        .contact_info {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #D3D3D3;
+            border-radius: 5px;
+        }
+    }
+
+    .footer_info {
+        padding: 10px;
+    }
+}

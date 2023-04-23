@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+#tktContainer {
+  max-width: 595px;
+  max-height: 842px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#tktContainer .ticketMainContainer .heading_text {
+  line-height: 0.2;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#tktContainer .ticketMainContainer .heading_text h4 {
+  color: #BFBFBF;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#tktContainer .ticketMainContainer .tktHeader {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  background: #014421;
+  color: whitesmoke;
 }
-
-.App-link {
-  color: #61dafb;
+#tktContainer .ticketMainContainer .tktHeader .logoImage img {
+  width: 120px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#tktContainer .ticketMainContainer .location_date_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #D3D3D3;
+  border-radius: 5px;
 }
+#tktContainer .ticketMainContainer .time_status_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #D3D3D3;
+  border-radius: 5px;
+}
+#tktContainer .ticketMainContainer .general_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #D3D3D3;
+  border-radius: 5px;
+}
+#tktContainer .ticketMainContainer .address_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #D3D3D3;
+  border-radius: 5px;
+}
+#tktContainer .ticketMainContainer .address_info .boarding_point {
+  max-width: 350px;
+}
+#tktContainer .ticketMainContainer .address_info .boarding_point h4 {
+  color: #D3D3D3;
+}
+#tktContainer .ticketMainContainer .address_info .bus_type h4 {
+  color: #D3D3D3;
+}
+#tktContainer .ticketMainContainer .contact_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #D3D3D3;
+  border-radius: 5px;
+}
+#tktContainer .footer_info {
+  padding: 10px;
+}/*# sourceMappingURL=app.css.map */

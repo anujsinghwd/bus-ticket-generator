@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import jsPDF from 'jspdf';
 import './App.css';
+import Ticket from './Ticket';
 
 function App() {
+
+  const generatePDF = () => {
+    const doc: any = new jsPDF('p', 'pt', 'a4');
+
+    doc.html(document.querySelector('#tktContainer'), {
+      callback: function (doc: any) {
+        doc.save()
+      }
+    });
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Ticket /> */}
+      <div className="formContainer">
+        <div className="inputContainer">
+
+        </div>
+      </div>
+      <div>
+        <button onClick={generatePDF}>PDF</button>
+      </div>
     </div>
   );
 }
